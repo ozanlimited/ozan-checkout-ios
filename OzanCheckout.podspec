@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.author             = { 'Ozan' => 'ozan@codespace.com' }
   s.platform     = :ios, '8.0'
   s.ios.deployment_target = '8.0'
-  s.source       = { :path => '/Users/mkeremkeskin/Desktop/EFT Projects/OzanCheckoutSDK/OzanCheckout/OzanCheckoutPod.zip'}
+  s.source       = { :git => 'https://github.com/ozanlimited/ozan-checkout-ios/releases/download/v0.0.1/OzanCheckoutPod.zip'}
   s.source_files  = 'OzanCheckout.framework/Headers/CheckoutErrorModel.h', 'OzanCheckout.framework/Headers/CheckoutObject.h', 'OzanCheckout.framework/Headers/OzanCheckout.h', 'OzanCheckout.framework/Headers/OzanCheckoutManager.h'
   s.ios.vendored_frameworks = 'OzanCheckout.framework'
 
