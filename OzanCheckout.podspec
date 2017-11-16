@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = 'http://www.ozan.com'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
-  s.author             = { 'Ozan' => 'ozan@codespace.com' }
+  s.author       = { 'Ozan' => 'kerem.keskin@codespacedev.com' }
   s.platform     = :ios, '8.0'
   s.ios.deployment_target = '8.0'
   s.source       = { :git => 'https://github.com/ozanlimited/ozan-checkout-ios/releases/download/v0.0.1/OzanCheckoutPod.zip'}
