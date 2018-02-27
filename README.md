@@ -24,7 +24,7 @@ Add the Intercom pod into your Podfile and run `pod install`.
 
 ### Manual Installation
 
-1. [Download Intercom for iOS](https://github.com/ozanlimited/ozan-checkout-ios/archive/master.zip) and extract the zip.
+1. [Download OzanCheckout for iOS](https://github.com/ozanlimited/ozan-checkout-ios/archive/master.zip) and extract the zip.
 2. Go to your Xcode project's "General" settings. Drag `OzanCheckout.framework` to the "Embedded Binaries" section. Make sure "Copy items if needed" is selected and click Finish.
 
 ## Example app
