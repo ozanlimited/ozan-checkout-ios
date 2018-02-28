@@ -11,7 +11,7 @@
 Ozan Checkout iOS supports iOS 8, iOS 9, iOS 10 and iOS 11.
 
 ### CocoaPods
-Add the Intercom pod into your Podfile and run `pod install`.
+Add the OzanCheckout pod into your Podfile and run `pod install`.
 
     target :YourTargetName do
       pod 'OzanCheckout'
