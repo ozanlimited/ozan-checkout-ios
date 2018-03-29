@@ -33,8 +33,8 @@ NSArray *environments;
 - (IBAction)presentWebview {
 
     [OzanCheckoutManager.sharedManager setPublicApiKey:_apiKeyTextField.text];
+    [OzanCheckoutManager.sharedManager setLocale:localeRU];
     OzanCheckoutManager.sharedManager.ozanCheckoutManagerDelegate = self;
-
     CheckoutObject *checkoutObject = [[CheckoutObject alloc] initWithAmount:61.98 andCurrency:@"EUR" andMerchantName:@""];
     [OzanCheckoutManager.sharedManager presentCheckoutScreen:self withCheckoutInfo:checkoutObject];
 }
@@ -42,8 +42,8 @@ NSArray *environments;
 - (IBAction)pushWebview {
 
     [OzanCheckoutManager.sharedManager setPublicApiKey:_apiKeyTextField.text];
+    [OzanCheckoutManager.sharedManager setLocale:localeRU];
     OzanCheckoutManager.sharedManager.ozanCheckoutManagerDelegate = self;
-
     CheckoutObject *checkoutObject = [[CheckoutObject alloc] initWithAmount:61.98 andCurrency:@"EUR" andMerchantName:@""];
     [OzanCheckoutManager.sharedManager pushCheckoutScreenToNavigation:self.navigationController withCheckoutInfo:checkoutObject];
 }
@@ -93,3 +93,4 @@ NSArray *environments;
     }
 }
 @end
+

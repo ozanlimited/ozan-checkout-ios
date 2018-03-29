@@ -28,6 +28,22 @@ typedef enum {
     EnvProduction
 } Environment;
 
+/*!
+ @typedef
+
+ Enums for selecting language
+
+ currently available
+ @enum localeRU
+ @enum localeEN
+
+ */
+
+typedef enum {
+    localeEN,
+    localeRU
+} Locale;
+
 
 /*!
  @protocol OzanCheckoutManagerDelegate
@@ -97,6 +113,19 @@ typedef enum {
  */
 - (void) setPublicApiKey: (NSString * _Nonnull) apiKey;
 
+
+/*!
+
+ Setting locale for language
+
+ @param locale your locale
+
+ <pre>@textblock
+ OzanCheckoutManager.shared().setLocale(Locale.localeEN)
+ @/textblock</pre>
+
+ */
+- (void)setLocale:(Locale)locale;
 
 /*!
 

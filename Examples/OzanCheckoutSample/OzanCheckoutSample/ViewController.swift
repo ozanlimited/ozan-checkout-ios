@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     @IBAction func presentWebView (sender: UIButton) {
 
         OzanCheckoutManager.shared().setPublicApiKey(apiKeyTextField.text!)
+        OzanCheckoutManager.shared().setLocale(localeRU)
         OzanCheckoutManager.shared().ozanCheckoutManagerDelegate = self
 
         let checkoutObject = CheckoutObject.init(amount: 61.98, andCurrency: "EUR", andMerchantName: "")
@@ -38,6 +39,7 @@ class ViewController: UIViewController {
     @IBAction func pushWebView (sender: UIButton) {
 
         OzanCheckoutManager.shared().setPublicApiKey(apiKeyTextField.text!)
+        OzanCheckoutManager.shared().setLocale(localeRU)
         OzanCheckoutManager.shared().ozanCheckoutManagerDelegate = self
 
         let checkoutObject = CheckoutObject.init(amount: 61.98, andCurrency: "EUR", andMerchantName: "")
@@ -100,3 +102,4 @@ extension ViewController: UITextFieldDelegate {
         return true
     }
 }
+
